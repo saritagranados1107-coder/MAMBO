@@ -1,0 +1,49 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+/* Nombre */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Títulos principales */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Subtítulos */
+h3 {
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+/* Texto */
+p {
+    line-height: 1.6;
+}
+
+/* Información de contacto debajo del nombre */
+h1 + h2 {
+    text-align: center;
+    border-bottom: none;
+    color: #3498db;
+    margin-top: 5px;
+}
+
+/* Listas simuladas con guiones */
+p {
+    white-space: pre-line;
+}
