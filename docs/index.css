@@ -1,0 +1,122 @@
+/* Configuración general */
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+color: #333;
+max-width: 900px;
+margin: 40px auto;
+padding: 30px;
+background-color: white;
+}
+
+/* Encabezado */
+header {
+text-align: center;
+padding-bottom: 20px;
+}
+
+h1 {
+color: #2c3e50;
+margin-bottom: 5px;
+}
+
+header h2 {
+color: #3498db;
+border-bottom: none;
+margin-top: 5px;
+}
+
+/* Información de contacto - FLEXBOX */
+.contacto {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 15px;
+font-size: 14px;
+}
+
+/* Títulos principales */
+h2 {
+color: #2c3e50;
+border-bottom: 2px solid #3498db;
+padding-bottom: 5px;
+margin-top: 30px;
+}
+
+/* Subtítulos */
+h3 {
+color: #34495e;
+margin-bottom: 5px;
+}
+
+/* Texto */
+p {
+line-height: 1.6;
+white-space: pre-line;
+}
+
+/* GRID para habilidades y educación */
+.grid-superior {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+}
+
+/* Secciones */
+.seccion {
+padding: 5px;
+}
+
+/* Experiencia - FLEXBOX */
+.experiencia {
+display: flex;
+gap: 30px;
+}
+
+.experiencia > div {
+flex: 1;
+padding: 15px;
+border-left: 3px solid #3498db;
+background-color: #f8f8f8;
+}
+
+/* Proyectos - GRID */
+.proyectos {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+}
+
+.proyectos > div {
+padding: 15px;
+background-color: #f8f8f8;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 650px) {
+
+body {
+    margin: 15px;
+    padding: 20px;
+}
+
+.grid-superior,
+.proyectos {
+    grid-template-columns: 1fr;
+}
+
+.experiencia {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacto {
+    flex-direction: column;
+    gap: 8px;
+}
+
+}
