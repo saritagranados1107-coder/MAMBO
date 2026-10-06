@@ -1,122 +1,178 @@
-/* Configuración general */
-body {
-font-family: Arial, sans-serif;
-background-color: #f2f2f2;
-color: #333;
-max-width: 900px;
-margin: 40px auto;
-padding: 30px;
-background-color: white;
+/*CONFIG GENERAL*/
+
+* {
+    box-sizing: border-box;
 }
 
-/* Encabezado */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+/*ENCABEZADO*/
+
 header {
-text-align: center;
-padding-bottom: 20px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 h1 {
-color: #2c3e50;
-margin-bottom: 5px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-size: 32px;
 }
 
 header h2 {
-color: #3498db;
-border-bottom: none;
-margin-top: 5px;
+    color: #3498db;
+    border-bottom: none;
+    margin-top: 5px;
+    font-size: 20px;
 }
 
-/* Información de contacto - FLEXBOX */
+/*INFO DE CONTACTO*/
+
 .contacto {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 20px;
-flex-wrap: wrap;
-margin-top: 15px;
-font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
-/* Títulos principales */
+/*TÍTULOS PRINCIPALES*/
+
 h2 {
-color: #2c3e50;
-border-bottom: 2px solid #3498db;
-padding-bottom: 5px;
-margin-top: 30px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 30px;
 }
 
-/* Subtítulos */
+/*SUBTÍTULOS*/
+
 h3 {
-color: #34495e;
-margin-bottom: 5px;
+    color: #34495e;
+    margin-bottom: 5px;
 }
 
-/* Texto */
+/*TEXTO ÑEÑEÑE*/
+
 p {
-line-height: 1.6;
-white-space: pre-line;
+    line-height: 1.6;
+    white-space: pre-line;
 }
 
-/* GRID para habilidades y educación */
+/*HABILIDADES Y EDUCACIÓN (GRID)*/
+
 .grid-superior {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
-/* Secciones */
+/*SECCIONES*/
+
 .seccion {
-padding: 5px;
+    padding: 5px;
 }
 
-/* Experiencia - FLEXBOX */
+/*EXPERIENCIA (FLEX)*/
+
 .experiencia {
-display: flex;
-gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 
 .experiencia > div {
-flex: 1;
-padding: 15px;
-border-left: 3px solid #3498db;
-background-color: #f8f8f8;
+    flex: 1;
+    padding: 15px;
+    border-left: 3px solid #3498db;
+    background-color: #f8f8f8;
 }
 
-/* Proyectos - GRID */
+/*PROYECTOS (GRID)*/
+
 .proyectos {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 .proyectos > div {
-padding: 15px;
-background-color: #f8f8f8;
-border: 1px solid #ddd;
-border-radius: 5px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-/* Adaptación para celulares */
-@media (max-width: 650px) {
+/*---RESPONSIVE PARA TABLETS---*/
 
-body {
-    margin: 15px;
-    padding: 20px;
+@media (max-width: 768px) {
+
+    body {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .grid-superior,
+    .proyectos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .experiencia {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
-.grid-superior,
-.proyectos {
-    grid-template-columns: 1fr;
-}
+/*---RESPONSIVE PARA CELULARES---*/
 
-.experiencia {
-    flex-direction: column;
-    gap: 10px;
-}
+@media (max-width: 480px) {
 
-.contacto {
-    flex-direction: column;
-    gap: 8px;
-}
+    body {
+        margin: 0;
+        padding: 20px 15px;
+    }
 
+    h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .contacto {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .experiencia > div,
+    .proyectos > div {
+        padding: 12px;
+    }
 }
