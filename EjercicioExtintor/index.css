@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+h1 {
+    margin: 0;
+    padding: 15px;
+    background-color: #a90000;
+    color: white;
+    font-size: 55px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+#claseA {
+    color: #087443;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#imagenFuego {
+    width: 150px;
+    cursor: pointer;
+}
+
+#solidosCombustibles {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 5px;
+}
+
+h3 {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #061a5c;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+h3 + p {
+    margin-top: 10px;
+}
+
+h3 ~ p {
+    text-align: left;
+    margin-left: 20%;
+    font-weight: bold;
+}
